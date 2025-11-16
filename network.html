@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Network - LinkedIn Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.navbar {
+    width: 100%;
+    background: #ffffff;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+}
+.navbar:hover{
+    background-color: #444;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0a66c2;
+}
+
+.nav-links a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-links .active {
+    color: #0a66c2;
+}
+
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 25%;
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.sidebar h3 {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li {
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+    color: #444;
+}
+
+
+.main-content {
+    width: 75%;
+    padding: 0 30px;
+}
+
+.main-content h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+
+.invite-card {
+    display: flex;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 25px;
+}
+
+.invite-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.invite-details h3 {
+    font-size: 18px;
+}
+
+.invite-details p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.buttons button {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.ignore {
+    background: #e2e2e2;
+}
+
+.accept {
+    background: #0a66c2;
+    color: white;
+}
+
+
+.suggested-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.suggest-card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.suggest-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.connect-btn {
+    background:greenyellow;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.buttons{
+    background-color:#333;
+}
+.accept{
+    background-color: chartreuse;
+}
+.accept:hover{
+    background-color: blue;
+}
+.sidebar{
+    background-color:#ddd;
+
+}
+#m,#p,#d,#o,#h,#s{
+    border:2px solid black;
+
+}
+#m:hover{
+    background-color: #444;
+}
+#h:hover{
+    background-color: #444;
+}
+#o:hover{
+    background-color: #444;
+}
+#p:hover{
+    background-color: #444;
+}
+#s:hover{
+    background-color: #444;
+}
+#d:hover{
+    background-color: #444;
+}
+</style>
+<body>
+
+
+    <nav class="navbar">
+        <div class="logo">Unitee</div>
+        <div class="nav-links">
+            <a href="indexx.html">Home</a>
+            <a href="network.html" class="active">My Network</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="#">Messaging</a>
+            <a href="#">Notifications</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+            <aside class="sidebar">
+            <h3>Manage my network</h3>
+            <ul class="hiii"> 
+                <li id="h">Connections</li>
+                <li id="o">Contacts</li>
+                <li id="m">People I Follow</li>
+                <li id="p">Groups</li>
+                <li id="d">Events</li>
+                <li id="s">Pages</li>
+            </ul>
+        </aside>
+
+        
+        <main class="main-content">
+            <h2>Invitations</h2>
+
+        
+            <div class="invite-card">
+                <img src="https://img.freepik.com/premium-photo/handsome-middleaged-man-with-salt-pepper-hair-friendly-smile-wearing-glasses-casual-blue-shirt-with-dark-blue-suit-jacket_14117-533677.jpg" alt="">
+                <div class="invite-details">
+                    <h3>Rohit Sharma</h3>
+                    <p>Software Developer at Google</p>
+                    <div class="buttons">
+                        <button class="ignore">Ignore</button>
+                        <button class="accept">Accept</button>
+                    </div>
+                </div>
+            </div>
+
+            <h2>suggestions for you .</h2>
+
+            <div class="suggested-grid">
+                <div class="suggest-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9rghdqELxSDaLH1BaH6OVDhMUMJyEjY9NQQ&s">
+                    <h4>Priya Singh</h4>
+                    <p>UI/UX Designer</p>
+                    <button class="connect-btn">Connect</button>
+                </div>
+
+                <div class="suggest-card">
+                    <img src="https://img.freepik.com/free-photo/handsome-man-with-glasses-posing_144627-14305.jpg">
+                    <h4>Amit Mehra</h4>
+                    <p>React Developer</p>
+                    <button class="connect-btn">Connect</button>
+                </div>
+
+                <div class="suggest-card">
+                    <img src="https://img.freepik.com/free-photo/portrait-happy-smiling-woman-standing-square-sunny-summer-spring-day-outside-cute-smiling-woman-looking-you-attractive-young-girl-enjoying-summer-filtered-image-flare-sunshine_231208-6734.jpg?semt=ais_hybrid&w=740&q=80">
+                    <h4>Ananya Varma</h4>
+                    <p>Product Manager</p>
+                    <button class="connect-btn">Connect</button>
+                </div>
+            </div>
+            <div class="invite-card">
+    <img src="https://media.istockphoto.com/id/640312968/photo/you-can-never-watch-too-many-cat-videos.jpg?s=612x612&w=0&k=20&c=x_aZqpQM0soruVgF_1SLE08xK_qBQ1tvQcjKFcLNSy4=" width="200">
+    <div class="invite-details">
+        <h3>Vikram Soni</h3>
+        <p>Cloud Engineer at Amazon</p>
+        <div class="buttons">
+            <button class="ignore">Ignore</button>
+            <button class="accept">Accept</button>
+        </div>
+    </div>
+</div>
+
+<div class="invite-card">
+    <img src="https://img.freepik.com/free-photo/attractive-young-woman-working-laptop-early-morning_169016-24935.jpg" width="200">
+    <div class="invite-details">
+        <h3>Sneha Gupta</h3>
+        <p>Marketing Strategist | HubSpot</p>
+        <div class="buttons">
+            <button class="ignore">Ignore</button>
+            <button class="accept">Accept</button>
+        </div>
+    </div>
+</div>
+
+<div class="invite-card">
+    <img src="https://images.pexels.com/photos/15598845/pexels-photo-15598845/free-photo-of-young-indian-boy-is-doing-his-work-in-laptop.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="200">
+    <div class="invite-details">
+        <h3>Arjun Patel</h3>
+        <p>Python Developer at TCS</p>
+        <div class="buttons">
+            <button class="ignore">Ignore</button>
+            <button class="accept">Accept</button>
+        </div>
+    </div>
+</div>
+<div class="invite-card">
+    <img src="https://img.freepik.com/free-photo/portrait-smiling-young-man_1268-21877.jpg?semt=ais_hybrid&w=740&q=80" width="200">
+    <div class="invite-details">
+        <h3>Vikram Soni</h3>
+        <p>Cloud Engineer at Amazon</p>
+        <div class="buttons">
+            <button class="ignore">Ignore</button>
+            <button class="accept">Accept</button>
+        </div>
+    </div>
+</div>
+
+<div class="invite-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiCTCRF8VMxR63s2WjdXsdLipybRtkfjKTeA&s" width="200">
+    <div class="invite-details">
+        <h3>Sneha Gupta</h3>
+        <p>Marketing Strategist | HubSpot</p>
+        <div class="buttons">
+            <button class="ignore">Ignore</button>
+            <button class="accept">Accept</button>
+        </div>
+    </div>
+</div>
+
+<div class="invite-card">
+    <img src="https://images.unsplash.com/photo-1464863979621-258859e62245?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2lybCUyMGJlYXV0aWZ1bHxlbnwwfHwwfHx8MA%3D%3D" width="200">
+    <div class="invite-details">
+        <h3>Arjun Patel</h3>
+        <p>Python Developer at TCS</p>
+        <div class="buttons">
+            <button class="ignore">Ignore</button>
+            <button class="accept">Accept</button>
+        </div>
+    </div>
+</div>
+
+
+        </main>
+
+    </div>
+
+</body>
+</html>
