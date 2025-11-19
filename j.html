@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.tabs {
+  display: flex;
+  gap: 12px;
+  padding: 10px;
+  background: #f7f7f7;
+  border-radius: 12px;
+  width: max-content;
+}
+
+.tab {
+  padding: 8px 16px;
+  background: #e9e9e9;
+  border-radius: 12px;
+  font-family: sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #555;
+
+}
+
+.tab.active {
+  background: #dbe7ff;
+  color: #0057ff;
+  font-weight: 600;
+}
+
+.tab:hover {
+  background: #dcdcdc;
+}
+
+.badge {
+  background: #ccc;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  border:
+}
+.container{
+    width:250px;
+    height: 500px;
+    background-color: #ccc;
+}
+.data{
+    height:90px;
+    width:200px;
+    background-color:#555;
+    border-radius:5px;
+
+}
+.data .time{
+    width: 60px;       
+    font-size: 12px;
+    color: gray;
+    text-align: left;
+}
+.main-content {
+      flex: 1;
+      background: #fff;
+      border-radius: 8px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  .chat-message {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      height:400px;;
+
+    }
+
+    .chat-message .sender {
+      align-self: flex-start;
+      background: #eee;
+      padding: 8px;
+      border-radius: 10px;
+      max-width: 60%;
+    }
+
+    .chat-message .receiver {
+      align-self: flex-end;
+      background: #dcf8c6;
+      padding: 8px;
+      border-radius: 10px;
+      max-width: 60%;
+    }
+    .app{
+        display:flex;
+
+    }
+    .navbar {
+    width: 100%;
+    background: #ffffff;
+    padding: 2px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+
+}
+.navbar:hover{
+    background-color: #444;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0a66c2;
+}
+.nav-links a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+.nav-links .active {
+    color: #0a66c2;
+}
+.input{
+    width: 100px;
+}
+.w{
+    border-radius: 50%;
+}
+.h{
+    text-align: center;
+}
+.right-sidebar{
+    background-color: #555;
+}
+
+
+
+
+
+ 
+
+
+   
+
+</style>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Unitee</div>
+        <div class="nav-links">
+            <input placeholder="find jobs" type="text" class="input">
+            <a href="indexx.html">Home</a>
+             <a href="#">My network</a>
+              <a href="#">Jobs</a>
+
+            <a href="j.html" class="active">Messaging</a>
+       
+           
+            <a href="#">Notifications</a>
+        </div>
+       
+        </div>
+    </nav>
+    <div class="app">
+     
+   
+
+        
+    <div class="container">
+        <h2>Discussions<img  width="30"></h2><br>
+
+        <div class="tabs">
+            <div class="tab active">All</div>
+            <div class="tab">
+                Unread<span class="badge">106</span>
+            </div>
+
+        </div>
+        <img src="https://cdn.pixabay.com/photo/2021/07/02/04/48/search-6380865_640.png" width="50">
+        <input type="text" placeholder="search for contact ......">
+        
+        
+        <div class="data">
+            <img src="https://i.pinimg.com/222x/b1/3c/a3/b13ca305487326d44135fe713b30e865.jpg" width="30" style="border-radius:50%;">Rama 
+            <input type="text" placeholder="message here">
+            <span class="time">10min</span>
+
+        
+
+        </div><br>
+          <div class="data">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyqhjJJNTc7QyRnpoGegRYJ2kzj3B_5kYjGw&s" width="30" style="border-radius:50%;">Pranshu  
+            <input type="text" placeholder="message here">
+            <span class="time">20min</span>
+
+        
+
+        </div><br>
+          <div class="data">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Wd2V4MkJEye-XCpbqj-U0smSt-lglyfEFQ&s" width="30" style="border-radius:50%;">Rhia 
+            <input type="text" placeholder="message here">
+            <span class="time">33 min</span>
+
+
+
+        
+
+        </div>
+    
+
+        </div>
+           <div class="main-content">
+    <h3>Contact  with Rama</h3>
+
+    <div class="chat-message">
+      <div class="sender">Hi! How are you?</div>
+      <div class="receiver">I'm good, thanks! How about you?</div>
+      <div class="sender">Doing great. What are you up to?</div>
+      <div class="sender">Doing great. What are you up to?</div>
+      <div class="sender">Doing great. What are you up to?</div>
+      <div class="receiver">I'm good, thanks! How about you?</div>
+
+
+
+      
+
+
+      
+
+
+    </div>
+
+    <input type="text" placeholder="Type your message...">
+  </div>
+    <div class="right-sidebar">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpWYRFqXu8QAP38VEcLXEwX_ZU-knbN17Avw&s" class="w" width="100">
+        <p style="color:#ddd">Editor-in-chief@Wallaxy | I'm very active on linkedinn</p><br>
+
+        <img src="https://thumbs.dreamstime.com/b/unite-icon-white-background-simple-element-illustration-geometric-figure-concept-isolated-editable-logo-symbol-design-can-141671774.jpg" width="100">
+        <hr class="d">
+        <h4 class="h">Tags</h4>
+        <button class="HI">NOTIFY ME </button><br><br>
+        <button class="HIi">MESSAGE NOW</button><br><br>
+        <button class="hii">SCHEDULE NOW 
+            <select type="radio">
+                <option value="10:00 am">10:00 am</option>
+                <option value="12:00 am">12:00 am</option>
+                <option value="10:00 pm">10:00 pm</option>
+                <option value="11:00 pm">11:00 pm</option>
+            </option>
+        </button>
+
+        </div>
+        <!-- <br> -->
+
+
+
+    </div>
+    
+
+
+
+
+
+
+
+       
+        
+    </div>
+  
+     
+    </div>
+     
+
+    
+</body>
+</html>

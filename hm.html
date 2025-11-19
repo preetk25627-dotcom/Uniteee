@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+     
+    
+     .CIRCLE{
+        height:100px;
+        width:100px;
+        background-color: burlywood;
+        border-radius: 50%;
+        animation : move 3s infinite ease-out;
+    } 
+    @keyframes move {
+        0%{
+            transform: translateX(0px) ;
+        }
+        25%{
+            transform: translateX(100px) ;
+
+        }
+        50%{
+            transform: translateX(100px) translateY(100px);
+        }
+        75%{
+            transform:translateY(100px)
+        }
+        100%{
+            transform: translateY(0);
+
+        }
+            
+        
+
+
+    
+    }
+</style>
+<body>
+
+    <div class="CIRCLE"></div>
+
+    
+</body>
+</html>
