@@ -2,13 +2,167 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Unitee - Notifications</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .notif-container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 8px;
+            
+           
+        }
+        .notif-header {
+            font-size: 34px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            
+            
+        }
+        .notif-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .notif-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            border-bottom: 1px solid #eef0f2;
+            padding: 16px 0;
+            
+        }
+        .notif-item:last-child {
+            border-bottom: none;
+        }
+        .notif-avatar {
+            
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: #ccd6ff;
+            object-fit: cover;
+            display: block;
+        }
+        .notif-content {
+            flex: 1;
+        }
+        .notif-message {
+     
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+        .notif-time {
+            color: #75798b;
+            font-size: 0.95rem;
+        }
+        .notif-item.unread {
+            background: #e8f0fe;
+            border-left: 4px solid #2874f0;
+            padding-left: 12px;
+        }
+         
+
+.j {
+    position: relative;
+    right: 0;
+    top: 0;
+}
+      
+    </style>
 </head>
 <body>
-    
-   <!-- <script src="./h.js"></script> -->
-    <script src="./h.js"></script>
+    <div class="notif-container">
+        <div class="notif-header">Notifications</div>
+        <ul class="notif-list">
+            <li class="notif-item unread">
+                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Avatar" class="notif-avatar">
+                <img src="https://cdn.vectorstock.com/i/1000v/28/55/red-bell-icon-or-reminder-notification-alert-vector-45402855.jpg" width="10" class="j">
+                
+                <div class="notif-content">
+                   
+                    <div class="notif-message"><span>Santosh Mehra</span> commented on your post.</div>
+                    <div class="notif-time">2 minutes ago</div>
+                </div>
+            </li>
+            <li class="notif-item">
+                <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="Avatar" class="notif-avatar">
+                <img src="https://cdn.vectorstock.com/i/1000v/28/55/red-bell-icon-or-reminder-notification-alert-vector-45402855.jpg" width="10" class="j">
+                <div class="notif-content">
+                     
+                    <div class="notif-message"span>Pooja Sharma</span> sent you a connection request.</div>
+                    <div class="notif-time">15 minutes ago</div>
+                </div>
+            </li>
+            <li class="notif-item unread">
+                <img src="https://randomuser.me/api/portraits/men/34.jpg" alt="Avatar" class="notif-avatar">
+                 <img src="https://cdn.vectorstock.com/i/1000v/28/55/red-bell-icon-or-reminder-notification-alert-vector-45402855.jpg" width="10" class="j">
+                <div class="notif-content">
+                    <div class="notif-message"><span>Deepak Kumar</span> liked your update in "Unitee Professionals".</div>
+                    <div class="notif-time">1 hour ago</div>
+                </div>
+            </li>
+            <li class="notif-item">
+                <img src="https://apuedge.com/wp-content/uploads/AdobeStock_200902415.jpeg" alt="Avatar" class="notif-avatar">
+                <img src="https://cdn.vectorstock.com/i/1000v/28/55/red-bell-icon-or-reminder-notification-alert-vector-45402855.jpg" width="10" class="j">
+                <div class="notif-content">
+                     
+                    <div class="notif-message"><span>Anita Joshi</strong> mentioned you in a comment.</div>
+                    <div class="notif-time">Yesterday</div>
+                </div>
+            </li>
+            <li class="notif-item unread">
+                <img src="" alt="Avatar" class="notif-avatar">
+                 <img src="https://cdn.vectorstock.com/i/1000v/28/55/red-bell-icon-or-reminder-notification-alert-vector-45402855.jpg" width="10" class="j">
+                <div class="notif-content">
+                    <div class="notif-message"><span>Anita Joshi</strong> mentioned you in a comment.</div>
+                    <div class="notif-time">Yesterday</div>
+            </div>
+            </li>
+            <li class="notif-item">
+                
+                <img src="https://randomuser.me/api/portraits/women/47.jpg" alt="Avatar" class="notif-avatar">
+                 <img src="https://cdn.vectorstock.com/i/1000v/28/55/red-bell-icon-or-reminder-notification-alert-vector-45402855.jpg" width="10" class="j">
+                <div class="notif-content">
+                    <div class="notif-message"><span>Anita Joshi</strong> mentioned you in a comment.</div>
+                    <div class="notif-time">Yesterday</div>
+                </li>
+              <li class="notif-item unread ">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK6I7DDGC0TmbyhagTLpGprlZJ5msiXg-vuw&s" alt="Avatar" class="notif-avatar">
+                 <img src="https://cdn.vectorstock.com/i/1000v/28/55/red-bell-icon-or-reminder-notification-alert-vector-45402855.jpg" width="10" class="j">
+                <div class="notif-content">
+                    <div class="notif-message"><span>Anita Joshi</strong> mentioned you in a comment.</div>
+                    <div class="notif-time">Yesterday</div>
+                </li>
+                
+                  <li class="notif-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRelxMvTve0vHIvJPSddvIqKRLi1n5TvY7tlQ&s" alt="Avatar" class="notif-avatar">
+                 <img src="https://cdn.vectorstock.com/i/1000v/28/55/red-bell-icon-or-reminder-notification-alert-vector-45402855.jpg" width="10" class="j">
+                <div class="notif-content">
+                    <div class="notif-message"><span>Anita Joshi</strong> mentioned you in a comment.</div>
+                    <div class="notif-time">Yesterday</div>
+                </li>
+              <li class="notif-item unread">
+                <img src="https://randomuser.me/api/portraits/women/47.jpg" alt="Avatar" class="notif-avatar">
+                 <img src="https://cdn.vectorstock.com/i/1000v/28/55/red-bell-icon-or-reminder-notification-alert-vector-45402855.jpg" width="10" class="j">
+                <div class="notif-content">
+                    <div class="notif-message"><span>Anita Joshi</strong> mentioned you in a comment.</div>
+                    <div class="notif-time">Yesterday</div>
+                </li>
+                
+                
+                
 
+
+            </div>
+        </ul>
+    </div>
 </body>
 </html>
