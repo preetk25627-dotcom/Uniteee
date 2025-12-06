@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="update-text" type="text" placeholder="Enter new text" />
+    <button onclick="updateListItems()">Update List</button>
+
+    <ul>
+        <li class="list-item">Item 1</li>
+        <li class="list-item">Item 2</li>
+        <li class="list-item">Item 3</li>
+    </ul>
+
+    <script>
+      function updateListItems() {
+            let d = document.getElementById("update-text").value;
+            let item1 = document.getElementsByClassName("list-item");
+            let item2 = document.getElementsByClassName("list-item");
+            let item3 = document.getElementsByClassName("list-item");
+            let res = "";
+            res.innerText = d + item1;
+            res.innerText = d + item2;
+            res.innerText = d + item3;
+            console.log(res)
+        }
+    </script>
+</body>
+
+</html>
